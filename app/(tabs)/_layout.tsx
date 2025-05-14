@@ -23,12 +23,18 @@ export default function TabLayout() {
         name="bookings"
         options={{
           title: "Bookings",
+          tabBarIcon: (props) => (
+            <Icon size={props.size} color={props.color} name="search" />
+          ),
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",
+          tabBarIcon: (props) => (
+            <Icon size={props.size} color={props.color} name="search" />
+          ),
         }}
       />
     </Tabs>
